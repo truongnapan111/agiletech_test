@@ -46,3 +46,24 @@ nav {
     opacity: 0px;
     margin-left: 20px;
 }
+.troll {
+    background-color: rgba(156, 105, 226, 1);;
+    
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+   
+    left: 1392px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 20px;
+}
+.troll a{
+    text-decoration: none;
+    color: white;
+}
