@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Testimonials.css';
 import { slideshowGalleries } from '../../services/galleryService';
 
@@ -9,21 +9,23 @@ const Testimonials: React.FC = () => {
 
   useEffect(() => {
     slideshowGalleries(setGallery);
+  }, []);
 
-    const timer = setInterval(() => {
-      handleNextSlide();
-    }, 4000); // Change slide every 4 seconds
-
-    return () => clearInterval(timer);
-  }, [gallery.length]);
-
-  const handleNextSlide = () => {
+  const handleNextSlide = useCallback(() => {
     setIsSliding(true); // Start sliding effect
     setTimeout(() => {
       setCurrent((prev) => (prev + 1) % gallery.length);
       setIsSliding(false); // End sliding effect
     }, 500); // Duration matches CSS transition time
-  };
+  }, [gallery.length]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNextSlide();
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(timer);
+  }, [handleNextSlide]);
 
   const handlePrevSlide = () => {
     setIsSliding(true); // Start sliding effect
@@ -50,6 +52,6 @@ const Testimonials: React.FC = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Testimonials;
