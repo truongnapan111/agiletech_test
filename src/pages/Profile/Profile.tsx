@@ -104,7 +104,7 @@ const Profile: React.FC = () => {
       </div>
       <div className="profile-content">
         <div className='add-row'>
-          <a href='/profile' onClick={()=>addPost(posts,title,description, selectedTags,setTitle,setDescription,setPosts,setSelectedTags)}>ADD</a>
+          <button className='a' onClick={()=>addPost(posts,title,description, selectedTags,setTitle,setDescription,setPosts,setSelectedTags)}>ADD</button>
           <input value={title} onChange={(event) => setTitle(event.target.value)} type='text' placeholder='Title'/>
           <input value={description} onChange={(event) => setDescription(event.target.value)}  type='text' placeholder='Description'/>
           <Autocomplete

@@ -29,3 +29,20 @@ nav {
     margin-left: 20px;
 
 }
+.menu_btn button {
+    background-color: rgba(156, 105, 226, 1);;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+   
+    left: 1392px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 20px;
+}

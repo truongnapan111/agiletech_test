@@ -10,6 +10,7 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.7",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/utils": "^5.16.6",
     "@rollup/plugin-terser": "^0.4.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -55,6 +56,7 @@
     ]
   },
   "devDependencies": {
-    "main": "^1000.0.1"
+    "main": "^1000.0.1",
+    "source-map-loader": "^5.0.0"
   }
 }
