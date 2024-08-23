@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         {user ? <div className='menu_btn'>
                   <a href="/profile" className='sign-in' >Profile</a>
                   <button onClick={handleLogout}>Log Out</button>
-                </div> : <button className='troll'><a href='/sign_in'>Sign In</a></button>}
+                </div> : <a href='/sign_in' className="sign-in">Sign In</a>}
       </nav>
     </header>
   );
