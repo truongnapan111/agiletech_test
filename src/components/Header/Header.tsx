@@ -6,9 +6,7 @@ import { logout } from '../../services/authService';
 const Header: React.FC = () => {
   const [user, setUser] = useState<string | null>(null);
   const navigate = useNavigate();
-  const handleNav = () => {
-    navigate('/sign_in')
-  }
+
   useEffect(() => {
     const token = localStorage.getItem('accessToken');
     console.log(token)
@@ -45,7 +43,7 @@ const Header: React.FC = () => {
         {user ? <div className='menu_btn'>
                   <a href="/profile" className='sign-in' >Profile</a>
                   <button onClick={handleLogout}>Log Out</button>
-                </div> : <button onClick={handleNav} className='troll'><a >Sign In</a></button>}
+                </div> : <a href='/sign_in' className="sign-in">Sign In</a>}
       </nav>
     </header>
   );
