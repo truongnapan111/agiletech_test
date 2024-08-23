@@ -1,0 +1,172 @@
+.profile {
+    display: flex;
+    height: 100vh;
+    flex-direction: row; /* Xếp các phần tử ngang */
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px; /* Độ rộng cố định cho sidebar */
+    height: 100%;
+    background-color: rgba(217, 217, 217, 1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+}
+
+.sidebar .logooo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logooo img {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.sidebar-menu p {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.profile-content {
+    margin-left: 230px; /* Căn chỉnh profile-content sát bên sidebar */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    transition: margin-left 0.3s;
+}
+
+.add-row {
+    margin: 20px 0;
+    display: flex;
+    align-items: center; /* Canh giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.add-row a {
+    background-color: rgba(156, 105, 226, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    width: 59px;
+    height: 26px;
+    margin-right: 20px;
+}
+
+.add-row input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 18px;
+    width: calc(100% / 3 - 20px); /* Chia đều chiều rộng các input */
+}
+
+.add-row .MuiTextField-root {
+    background-color: rgb(255, 255, 255); 
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .sidebar {
+        width: 100%; /* Sidebar full-width trên màn hình nhỏ */
+        height: auto; /* Chiều cao tự động */
+        position: relative;
+    }
+  
+    .profile-content {
+        margin-left: 0; /* Loại bỏ khoảng cách khi sidebar full-width */
+        padding: 10px;
+    }
+  
+    .add-row {
+        flex-direction: column; /* Xếp các phần tử dọc trên màn hình nhỏ */
+        gap: 10px;
+    }
+
+    .add-row input {
+        width: 100%; /* Input full-width trên màn hình nhỏ */
+    }
+}
+/* Styling cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .sidebar {
+        width: 100%; /* Sidebar full-width trên màn hình nhỏ */
+        height: auto; /* Chiều cao tự động */
+        position: relative;
+    }
+  
+    .profile-content {
+        margin-left: 0; /* Loại bỏ khoảng cách khi sidebar full-width */
+        padding: 10px;
+    }
+  
+    .add-row {
+        flex-direction: column; /* Xếp các phần tử dọc trên màn hình nhỏ */
+        gap: 10px;
+    }
+
+    .add-row input {
+        width: 100%; /* Input full-width trên màn hình nhỏ */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1240px) {
+    .profile {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .sidebar {
+        width: 100%; /* Sidebar full-width trên màn hình nhỏ */
+        height: auto; /* Chiều cao tự động */
+        position: relative;
+    }
+  
+    .profile-content {
+        margin: 0; /* Loại bỏ khoảng cách khi sidebar full-width */
+        padding: 10px;
+    }
+  
+
+}
+
+@media (min-width: 1024px) {
+    .profile {
+        flex-direction: column;
+        width: 100%;
+    }
+    .profile-content {
+        /* margin-left: 230px; Căn chỉnh profile-content sát bên sidebar */
+    }
+
+    .add-row input {
+        width: calc(100% / 3 - 20px); /* Chia đều chiều rộng các input */
+    }
+}

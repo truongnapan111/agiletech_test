@@ -1,0 +1,90 @@
+.testimonials {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 50px;
+  background-color: rgba(156, 105, 226, 1);
+
+}
+.testimonials h2{
+  color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+  text-align: left;
+  margin-left: 100px;
+}
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial {
+  padding: 20px 0px 20px 0px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin: 0;
+}
+
+.testimonial h3 {
+  margin: 10px 0 5px;
+}
+
+.testimonial p:last-child {
+  margin: 0;
+  color: #555;
+}
+
+.testimonial-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-controls button {
+  background: #777777; /* Blue background */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.testimonial-controls button:hover {
+  background: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.testimonial-controls button:focus {
+  outline: none; /* Remove outline on focus */
+}

@@ -1,0 +1,74 @@
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw; /* Đảm bảo chiếm toàn bộ chiều rộng màn hình */
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .logoo {
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    top: 20px;
+    left: 20px;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .purple {
+    background-color: #A259FF;
+  }
+  
+  .pink {
+    background-color: #F24E1E;
+  }
+  
+  .signin-title {
+    font-size: 3rem; /* Tăng kích thước font để phù hợp với màn hình rộng */
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Tăng chiều rộng của form để phù hợp với màn hình rộng */
+  }
+  
+  .signin-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .signin-form input {
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .signin-button {
+    background-color: #A259FF;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .signin-button:hover {
+    background-color: #8939e2;
+  }
+  
