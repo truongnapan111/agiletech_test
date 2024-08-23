@@ -25,7 +25,6 @@ nav {
     top: 66px;
     left: 1392px;
     gap: 0px;
-    opacity: 0px;
     margin-left: 20px;
 
 }
@@ -43,7 +42,7 @@ nav {
    
     left: 1392px;
     gap: 0px;
-    opacity: 0px;
+   
     margin-left: 20px;
 }
 .troll {
@@ -60,7 +59,7 @@ nav {
    
     left: 1392px;
     gap: 0px;
-    opacity: 0px;
+    
     margin-left: 20px;
 }
 .troll a{
